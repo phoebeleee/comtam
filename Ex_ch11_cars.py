@@ -57,7 +57,7 @@ def continent_mpg(df):
     )
     #fig1.show() # vs code에서 확인용
 
-    st.plotly_chart(fig1, use_container_width=True) 
+    st.plotly_chart(fig1, width='stretch') 
     #use_container_width :Streamlit 페이지의 가로 폭(컨테이너 너비)에 자동으로 맞춰지게 할지 여부를 설정하는 옵션
 
     st.markdown("---")
@@ -123,7 +123,7 @@ def year_mpg(df):
         markers=True
     )
     # fig4.show()
-    st.plotly_chart(fig4, use_container_width=True)
+    st.plotly_chart(fig4, width='stretch')
 
     st.markdown("---")
 
